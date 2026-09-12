@@ -6,7 +6,7 @@ import WishesForm from './WishesForm';
 import { Hero } from './components/Hero';
 import { Countdown } from './components/Countdown';
 import { CoupleDetails } from './components/CoupleDetails';
-
+import { InvitationMessage } from './components/InvitationMessage';
 export default function StoryApp() {
   const [invitationOpened, setInvitationOpened] = useState(false);
   const [introPlayed, setIntroPlayed] = useState(false);
@@ -154,86 +154,7 @@ export default function StoryApp() {
         </section>
 
         {/* 3. DATE, TIME & CEREMONY (REDESIGNED TO MATCH IMAGE) */}
-        <section className="w-full py-20 sm:py-28 px-4 sm:px-6 flex flex-col items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none">
-            <img
-              src="/white_roses_bg.png"
-              alt="Floral Background"
-              className="w-full h-full object-cover object-center opacity-70"
-            />
-            <div className="absolute inset-0 bg-[#3a2c20]/70 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#110e0a]/90 via-[#2a1f16]/60 to-[#110e0a]/90" />
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="w-full max-w-xl flex flex-col items-center text-center relative z-10"
-          >
-            {guestDisplayName && (
-              <>
-                <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-extrabold text-[#d2bfae] mb-2 sm:mb-3">
-                  WE CORDIALLY INVITE
-                </p>
-                <p className="font-alex text-5xl sm:text-6xl md:text-[5.5rem] text-[#FAF7F2] font-normal tracking-wide drop-shadow-md mb-8 sm:mb-10 leading-tight">
-                  {guestDisplayName}
-                </p>
-              </>
-            )}
-
-            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-extrabold text-[#d2bfae] mb-2 sm:mb-2">
-              TO CELEBRATE OUR
-            </p>
-            <h2 className="font-alex text-[6.5rem] sm:text-[8rem] md:text-[9.5rem] text-[#FAF7F2] font-normal tracking-wide drop-shadow-lg leading-[0.8] mb-12 sm:mb-16">
-              Wedding
-            </h2>
-
-            <div className="flex flex-col items-center w-full mb-10 sm:mb-14 text-[#FAF7F2]">
-              <p className="text-sm sm:text-base uppercase tracking-[0.35em] font-extrabold mb-4 sm:mb-6">
-                NOVEMBER
-              </p>
-              <div className="flex items-center justify-center w-full gap-4 sm:gap-6 relative">
-                <div className="flex-1 h-[1px] bg-white/10 absolute left-0 right-1/2 mr-16 sm:mr-24" />
-                <div className="flex-1 h-[1px] bg-white/10 absolute right-0 left-1/2 ml-16 sm:ml-24" />
-                
-                <div className="flex-1 text-right relative z-10 pt-2">
-                  <p className="text-xs sm:text-sm uppercase tracking-[0.2em] font-extrabold">
-                    MONDAY
-                  </p>
-                </div>
-                <p className="serif text-[5.5rem] sm:text-[7rem] font-light leading-none px-4 drop-shadow-lg">
-                  16
-                </p>
-                <div className="flex-1 text-left relative z-10 pt-2">
-                  <p className="text-xs sm:text-[13px] uppercase tracking-[0.15em] font-extrabold">
-                    10:00 AM - 3:30 PM
-                  </p>
-                </div>
-              </div>
-              <p className="text-sm sm:text-base uppercase tracking-[0.35em] font-extrabold mt-2 sm:mb-6">
-                2026
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-[#d2bfae] space-y-2.5 mb-10 mt-6">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 opacity-70" />
-                <p className="text-[10px] sm:text-xs uppercase tracking-[0.2em] font-extrabold">
-                  REGAL GATEWAY LUXURY BANQUET
-                </p>
-              </div>
-              <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-bold text-[#FAF7F2]/60">
-                HETTIPOLA ROAD, KARAGAHAGEDARA
-              </p>
-            </div>
-
-            <p className="text-[10px] sm:text-xs uppercase tracking-[0.2em] font-extrabold text-[#d2bfae]">
-              PORUWA CEREMONY · 10:15 AM
-            </p>
-          </motion.div>
-        </section>
+        <InvitationMessage guestName={guestDisplayName} />
 
         {/* 4. LIVE COUNTDOWN SECTION */}
         <section
