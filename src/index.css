@@ -15,10 +15,10 @@
 @theme {
   --font-serif: "Cormorant Garamond", serif;
   --font-script: "Great Vibes", cursive;
-  --font-alex: "Great Vibes", cursive;
-  --font-pinyon: "Great Vibes", cursive;
-  --font-allura: "Great Vibes", cursive;
-  --font-corinthia: "Great Vibes", cursive;
+  --font-alex: "Alex Brush", cursive;
+  --font-pinyon: "Pinyon Script", cursive;
+  --font-allura: "Allura", cursive;
+  --font-corinthia: "Corinthia", cursive;
   --font-greatvibes: "Great Vibes", cursive;
   --font-sans: "Inter", sans-serif;
 
@@ -63,15 +63,15 @@ body {
 }
 
 .font-pinyon {
-  font-family: "Great Vibes", cursive;
+  font-family: "Pinyon Script", cursive;
 }
 
 .font-alex {
-  font-family: "Great Vibes", cursive;
+  font-family: "Alex Brush", cursive;
 }
 
 .font-allura {
-  font-family: "Great Vibes", cursive;
+  font-family: "Allura", cursive;
 }
 
 .font-parisienne {
@@ -79,11 +79,11 @@ body {
 }
 
 .font-corinthia {
-  font-family: "Great Vibes", cursive;
+  font-family: "Corinthia", cursive;
 }
 
 .font-tangerine {
-  font-family: "Great Vibes", cursive;
+  font-family: "Tangerine", cursive;
 }
 
 .font-greatvibes {

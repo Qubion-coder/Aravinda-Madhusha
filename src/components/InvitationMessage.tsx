@@ -69,7 +69,7 @@ export const InvitationMessage: React.FC<InvitationMessageProps> = ({
         </p>
 
         {/* 5. Couple Name */}
-        <h1 className="font-greatvibes text-[4rem] sm:text-[5.5rem] text-[#A0825B] leading-none mb-4 drop-shadow-sm">
+        <h1 className="font-alex text-[4.5rem] sm:text-[6rem] text-[#A0825B] leading-none mb-4 drop-shadow-sm pt-2">
           {coupleNames}
         </h1>
 

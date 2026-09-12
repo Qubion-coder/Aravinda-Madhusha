@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ inviteeName }) => {
         </div>
 
         {/* Bride */}
-        <h1 className="font-greatvibes text-[4rem] sm:text-[5.5rem] text-[#B8975F] leading-none mb-3 drop-shadow-sm">
+        <h1 className="font-alex text-[4.5rem] sm:text-[6rem] text-[#B8975F] leading-none mb-3 drop-shadow-sm pt-2">
           Madusha
         </h1>
 
@@ -106,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({ inviteeName }) => {
         </h2>
 
         {/* Groom */}
-        <h1 className="font-greatvibes text-[4rem] sm:text-[5.5rem] text-[#B8975F] leading-none mb-3 drop-shadow-sm">
+        <h1 className="font-alex text-[4.5rem] sm:text-[6rem] text-[#B8975F] leading-none mb-3 drop-shadow-sm pt-2">
           Aravinda
         </h1>
 
@@ -149,13 +149,6 @@ export const Hero: React.FC<HeroProps> = ({ inviteeName }) => {
           (PORUWA CEREMONY AT 10:15 AM)
         </p>
 
-        {/* RSVP */}
-        <p className="font-sans text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-extrabold text-[#504538] mb-1.5">
-          RSVP
-        </p>
-        <p className="font-sans text-[10px] tracking-[0.1em] text-[#655848] mb-10 sm:mb-14 font-medium">
-          Aravinda: 071-5244006 | Madusha: 071-8691636
-        </p>
 
       </div>
 

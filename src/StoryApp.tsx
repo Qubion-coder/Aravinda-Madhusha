@@ -284,14 +284,14 @@ export default function StoryApp() {
               </p>
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {/* Aravinda Contact */}
-                <div className="flex items-center justify-between p-3.5 rounded-2xl bg-[#FAF7F2] border border-[#C8B29E] shadow-sm">
+                <div className="flex items-center justify-between p-4 sm:p-5 rounded-[1.5rem] bg-[#FAF7F2] border border-[#E8DCC4] shadow-[0_8px_30px_rgba(200,178,158,0.12)]">
                   <div className="flex flex-col text-left">
-                    <span className="text-[11px] uppercase tracking-wider font-extrabold text-brand-plum">
+                    <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#8C7A6B] mb-1">
                       Aravinda
                     </span>
                     <a
                       href="tel:0715244006"
-                      className="font-serif text-base font-bold text-brand-plum hover:underline"
+                      className="font-serif text-lg sm:text-xl font-medium text-[#6A5A4A] tracking-wider hover:text-brand-plum transition-colors"
                     >
                       071 524 4006
                     </a>
@@ -316,15 +316,15 @@ export default function StoryApp() {
                   </div>
                 </div>
 
-                {/* Madhusha Contact */}
-                <div className="flex items-center justify-between p-3.5 rounded-2xl bg-[#FAF7F2] border border-[#C8B29E] shadow-sm">
+                {/* Madusha Contact */}
+                <div className="flex items-center justify-between p-4 sm:p-5 rounded-[1.5rem] bg-[#FAF7F2] border border-[#E8DCC4] shadow-[0_8px_30px_rgba(200,178,158,0.12)]">
                   <div className="flex flex-col text-left">
-                    <span className="text-[11px] uppercase tracking-wider font-extrabold text-brand-plum">
-                      Madhusha
+                    <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#8C7A6B] mb-1">
+                      Madusha
                     </span>
                     <a
                       href="tel:0718691636"
-                      className="font-serif text-base font-bold text-brand-plum hover:underline"
+                      className="font-serif text-lg sm:text-xl font-medium text-[#6A5A4A] tracking-wider hover:text-brand-plum transition-colors"
                     >
                       071 869 1636
                     </a>
